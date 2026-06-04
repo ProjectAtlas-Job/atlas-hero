@@ -6,11 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { CrowdCanvas } from "@/components/v1/skiper39";
 import { ButtonLink } from "@/components/ui/button";
 
-const signalRows = [
-  ["Profile", "experience, skills, GitHub evidence, resume craft"],
-  ["Market", "jobs, companies, hiring velocity, compensation signals"],
-  ["Action", "applications, cold mails, interviews, follow-ups"],
-] as const;
+
 
 export function HeroSection() {
   const reduceMotion = useReducedMotion();
@@ -60,14 +56,6 @@ export function HeroSection() {
           transition={{ duration: 0.55, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
           className="mt-14 max-w-[760px]"
         >
-          <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-3">
-            {signalRows.map(([label, description]) => (
-              <div key={label} className="bg-background p-4">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground">{label}</p>
-                <p className="mt-1.5 text-[12.5px] leading-5 text-muted-foreground">{description}</p>
-              </div>
-            ))}
-          </div>
         </motion.div>
       </div>
     </section>
