@@ -49,7 +49,7 @@ export default function LoginPage() {
           ? (error as { response?: { status?: number } }).response?.status
           : undefined;
       if (status === 403) {
-        setErrorMessage("Email not verified.");
+        setErrorMessage("Email not verified. Use the resend verification page to get a new link.");
         return;
       }
       if (status === 401) {

@@ -59,7 +59,23 @@ export default function RegisterPage() {
           ? (error as { response?: { status?: number } }).response?.status
           : undefined;
       if (status === 409) {
-        setErrorMessage("An account with that email already exists.");
+        const email = values.email.trim().toLowerCase();
+        try {
+          await api.post("/api/v1/auth/resend-verification", { email });
+          setRegisteredEmail(email);
+          form.reset();
+          return;
+        } catch (resendError: unknown) {
+          const resendStatus =
+            typeof resendError === "object" && resendError && "response" in resendError
+              ? (resendError as { response?: { status?: number } }).response?.status
+              : undefined;
+          if (resendStatus === 400) {
+            setErrorMessage("An account with that email already exists. Log in instead.");
+            return;
+          }
+        }
+        setErrorMessage("An account with that email already exists. Use resend verification or log in.");
         return;
       }
       setErrorMessage(getApiErrorMessage(error, "Unable to create your account right now."));
