@@ -6,13 +6,6 @@ import { ArrowRight } from "lucide-react";
 import { CrowdCanvas } from "@/components/v1/skiper39";
 import { ButtonLink } from "@/components/ui/button";
 
-const proofItems = [
-  "Candidate strength",
-  "Company score",
-  "Fit explanation",
-  "Outcome learning",
-];
-
 const signalRows = [
   ["Profile", "experience, skills, GitHub evidence, resume craft"],
   ["Market", "jobs, companies, hiring velocity, compensation signals"],
@@ -40,7 +33,10 @@ export function HeroSection() {
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-[1000px]"
         >
-          <p className="text-sm font-medium text-muted-foreground">India-first job search infrastructure</p>
+          <p className="inline-flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
+            <span className="inline-block size-1.5 rounded-full bg-foreground/60" aria-hidden="true" />
+            India-first job search infrastructure
+          </p>
           <h1 className="mt-5 text-[46px] font-semibold leading-[0.98] tracking-[-0.055em] text-foreground sm:text-[64px] lg:text-[78px]">
             Know which opportunities deserve your time.
           </h1>
@@ -59,11 +55,19 @@ export function HeroSection() {
         </motion.div>
 
         <motion.div
-          initial={reduceMotion ? false : { opacity: 0, y: 18, scale: 0.98 }}
-          animate={reduceMotion ? undefined : { opacity: 1, y: 0, scale: 1 }}
+          initial={reduceMotion ? false : { opacity: 0, y: 18 }}
+          animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-12 max-w-[760px]"
+          className="mt-14 max-w-[760px]"
         >
+          <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-3">
+            {signalRows.map(([label, description]) => (
+              <div key={label} className="bg-background p-4">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground">{label}</p>
+                <p className="mt-1.5 text-[12.5px] leading-5 text-muted-foreground">{description}</p>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

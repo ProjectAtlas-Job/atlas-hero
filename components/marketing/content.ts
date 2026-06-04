@@ -1,7 +1,6 @@
 import {
   ArrowUpRight,
   BriefcaseBusiness,
-  CalendarCheck,
   FileText,
   ListChecks,
   Network,
