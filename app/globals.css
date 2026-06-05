@@ -263,20 +263,20 @@ textarea:focus {
 
 .surface-hover {
   transition:
-    transform 320ms var(--ease-out-soft),
     box-shadow 320ms var(--ease-out-soft),
-    border-color 320ms ease;
+    border-color 320ms ease,
+    background 320ms ease;
 }
 
 .surface-hover:hover {
-  transform: translateY(-6px);
   border-color: rgba(17, 17, 17, 0.24);
-  box-shadow: 0 18px 48px rgba(17, 17, 17, 0.08);
+  background: color-mix(in srgb, var(--paper-soft) 94%, transparent);
+  box-shadow: 0 14px 42px rgba(17, 17, 17, 0.08);
 }
 
 .dark .surface-hover:hover {
   border-color: rgba(244, 241, 234, 0.28);
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.5);
 }
 
 /* ---- Chips / tags (design system §10.4) ---- */

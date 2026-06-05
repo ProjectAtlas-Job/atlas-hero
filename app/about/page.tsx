@@ -77,7 +77,7 @@ export default function AboutPage() {
             ["Control", "Manual override stays available for applications, outreach, profile edits, and follow-ups. Automation supports the user; it does not hide the process."],
           ].map(([title, text]) => (
             <SectionReveal key={title}>
-              <article className="h-full rounded-[1.5rem] border border-border bg-card p-6 transition duration-200 hover:-translate-y-1 hover:bg-muted">
+              <article className="h-full rounded-[1.5rem] border border-border bg-card p-6 transition duration-200 hover:border-foreground/24 hover:bg-muted">
                 <h2 className="font-display text-xl font-normal tracking-[-0.01em]">{title}</h2>
                 <p className="mt-4 text-sm leading-6 text-muted-foreground">{text}</p>
               </article>

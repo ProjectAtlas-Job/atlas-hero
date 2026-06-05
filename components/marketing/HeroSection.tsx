@@ -16,7 +16,7 @@ export function HeroSection() {
     <section className="relative min-h-[100dvh] overflow-hidden pt-16">
       {/* Crowd of peeps, drawn behind the type along the bottom */}
       <div className="pointer-events-none absolute inset-x-0 bottom-8 h-[66vh] min-h-[500px] overflow-hidden opacity-95 sm:h-[70vh] lg:h-[76vh]">
-        <div className="absolute inset-x-[-14vw] bottom-[-2vh] h-[28vh] scale-[1.08] sm:h-[32vh] sm:scale-[1.16] lg:h-[36vh] lg:scale-[1.12]">
+        <div className="absolute inset-x-[-14vw] bottom-[0vh] h-[28vh] scale-[1.08] sm:h-[32vh] sm:scale-[1.16] lg:h-[36vh] lg:scale-[1.12]">
           <CrowdCanvas src="/images/peeps/all-peeps.png" rows={15} cols={7} />
         </div>
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,var(--paper)_0%,color-mix(in_srgb,var(--paper)_76%,transparent)_16%,color-mix(in_srgb,var(--paper)_8%,transparent)_44%,color-mix(in_srgb,var(--paper)_48%,transparent)_88%,var(--paper)_100%)]" />
@@ -24,8 +24,8 @@ export function HeroSection() {
         <div className="absolute inset-y-0 right-0 w-[18vw] bg-[linear-gradient(to_left,var(--paper),transparent)]" />
       </div>
 
-      <div className="page-shell relative z-10 flex min-h-[calc(100dvh-64px)] flex-col justify-start pb-[52vh] pt-20 sm:pt-24 lg:pt-28">
-        <h1 className="max-w-[920px] font-display text-[clamp(42px,6.2vw,96px)] font-normal leading-[1.0] tracking-[-0.045em] text-black">
+      <div className="page-shell relative z-10 flex min-h-[calc(10dvh-640px)] flex-col justify-start pb-[40vh] pt-20 sm:pt-24 lg:pt-28">
+        <h1 className="max-w-[1000px] font-display text-[clamp(40px,6.2vw,88px)] font-normal leading-[1.1] tracking-[-0.02em] text-black">
           {LINES.map((line, i) => (
             <span key={line} className="block overflow-hidden pb-[0.06em]">
               <motion.span

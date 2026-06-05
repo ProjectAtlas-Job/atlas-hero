@@ -37,7 +37,7 @@ export default function WorkflowPage() {
         <div className="grid gap-4 md:grid-cols-5">
           {workflowSteps.map((step, index) => (
             <SectionReveal key={step.title}>
-              <div className="group h-full rounded-[1.5rem] border border-border bg-card p-5 transition duration-200 hover:-translate-y-1 hover:bg-muted">
+              <div className="group h-full rounded-[1.5rem] border border-border bg-card p-5 transition duration-200 hover:border-foreground/24 hover:bg-muted">
                 <span className="font-mono text-xs text-muted-foreground">0{index + 1}</span>
                 <step.icon className="mt-8 size-5" strokeWidth={1.75} />
                 <h2 className="mt-4 text-base font-semibold tracking-[-0.02em]">{step.title}</h2>
