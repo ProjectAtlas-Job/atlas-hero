@@ -64,7 +64,7 @@ export default function ContactSupportPage() {
       className="max-w-none"
       description="Send a message if you are blocked on verification, password recovery, or account access."
       eyebrow="Support"
-      title="Contact Atlas support"
+      title="Contact MyJobAtlas support"
       footer={
         <p className="text-sm text-muted-foreground">
           Back to{" "}
@@ -77,7 +77,7 @@ export default function ContactSupportPage() {
     >
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.26em] text-muted-foreground">Support</p>
-        <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em]">Send a message</h2>
+        <h2 className="mt-3 font-display text-[clamp(28px,4vw,44px)] font-normal tracking-[-0.025em]">Send a message</h2>
         <p className="mt-2 text-sm leading-6 text-muted-foreground">Share the account issue and a reachable email.</p>
       </div>
       <div className="mt-8">

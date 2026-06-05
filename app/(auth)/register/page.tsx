@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { AuthShell } from "@/components/auth/AuthShell";
+import { SocialAuthButtons } from "@/components/auth/SocialAuthButtons";
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { FormAlert } from "@/components/ui/form-alert";
@@ -84,9 +85,9 @@ export default function RegisterPage() {
 
   return (
     <AuthShell
-      description="Create your account here, verify the email, then continue into the Atlas app."
+      description="Create your account, confirm your email, and step straight into your workspace."
       eyebrow="New account"
-      title="Create your Atlas account"
+      title="Create your MyJobAtlas account"
       footer={
         <p className="text-sm text-muted-foreground">
           Already have an account?{" "}
@@ -97,11 +98,12 @@ export default function RegisterPage() {
       }
     >
       <div>
-        <p className="text-xs font-semibold uppercase tracking-[0.26em] text-muted-foreground">Start</p>
-        <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em]">Create account</h2>
-        <p className="mt-2 text-sm leading-6 text-muted-foreground">Begin with your Atlas profile.</p>
+        <p className="eyebrow">Start</p>
+        <h2 className="mt-3 font-display text-[2rem] font-normal tracking-[-0.02em]">Create account</h2>
+        <p className="mt-2 text-sm leading-6 text-muted-foreground">Begin with your MyJobAtlas profile.</p>
       </div>
-      <div className="mt-8">
+      <div className="mt-8 space-y-6">
+        <SocialAuthButtons label="Sign up" />
         <Form {...form}>
           <form className="space-y-5" onSubmit={onSubmit}>
             <FormField

@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { AuthShell } from "@/components/auth/AuthShell";
+import { SocialAuthButtons } from "@/components/auth/SocialAuthButtons";
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { FormAlert } from "@/components/ui/form-alert";
@@ -62,9 +63,9 @@ export default function LoginPage() {
 
   return (
     <AuthShell
-      description="Sign in on the root domain. Atlas will open the app on app.myjobatlas.site after the backend refresh cookie is set."
+      description="Welcome back. Sign in to pick up your search where you left it."
       eyebrow="Account access"
-      title="Sign in to Atlas"
+      title="Sign in to MyJobAtlas"
       footer={
         <div className="flex flex-wrap items-center justify-between gap-3 text-sm text-muted-foreground">
           <Link className="transition-colors hover:text-foreground" href="/forgot-password">
@@ -77,11 +78,12 @@ export default function LoginPage() {
       }
     >
       <div>
-        <p className="text-xs font-semibold uppercase tracking-[0.26em] text-muted-foreground">Account</p>
-        <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em]">Log in</h2>
-        <p className="mt-2 text-sm leading-6 text-muted-foreground">Continue to your Atlas account.</p>
+        <p className="eyebrow">Account</p>
+        <h2 className="mt-3 font-display text-[2rem] font-normal tracking-[-0.02em]">Log in</h2>
+        <p className="mt-2 text-sm leading-6 text-muted-foreground">Continue to your MyJobAtlas account.</p>
       </div>
-      <div className="mt-8">
+      <div className="mt-8 space-y-6">
+        <SocialAuthButtons />
         <Form {...form}>
           <form className="space-y-5" onSubmit={onSubmit}>
             <FormField

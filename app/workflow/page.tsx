@@ -7,13 +7,13 @@ import { WorkflowTimeline } from "@/components/marketing/WorkflowTimeline";
 import { siteUrl, workflowSteps } from "@/components/marketing/content";
 
 export const metadata: Metadata = {
-  title: "Atlas Workflow | Discovery, scoring, applications, outcomes",
-  description: "See how Atlas moves from job and company discovery to explainable matching, resume improvement, applications, and outcome learning.",
+  title: "MyJobAtlas Workflow | Discovery, scoring, applications, outcomes",
+  description: "See how MyJobAtlas moves from job and company discovery to explainable matching, resume improvement, applications, and outcome learning.",
   alternates: {
     canonical: `${siteUrl}/workflow`,
   },
   openGraph: {
-    title: "Atlas Workflow",
+    title: "MyJobAtlas Workflow",
     description: "Job discovery, candidate scoring, company intelligence, applications, and outcome learning in one flow.",
     url: `${siteUrl}/workflow`,
   },
@@ -24,12 +24,12 @@ export default function WorkflowPage() {
     <MarketingShell>
       <section className="page-shell pt-40 pb-16">
         <SectionReveal className="max-w-[760px]">
-          <p className="text-sm font-medium text-muted-foreground">Workflow</p>
-          <h1 className="mt-5 text-[44px] font-semibold leading-[1.02] tracking-[-0.055em] sm:text-[64px]">
+          <p className="eyebrow">Workflow</p>
+          <h1 className="mt-5 font-display text-[clamp(40px,6vw,72px)] font-normal leading-[1.0] tracking-[-0.035em]">
             The loop: collect signals, score fit, act, learn.
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            The v2 architecture separates raw signal extraction from scoring. That means Atlas can work on day one with transparent expert weights, then improve as applications, replies, interviews, offers, and rejections produce outcome data.
+            The v2 architecture separates raw signal extraction from scoring. That means MyJobAtlas can work on day one with transparent expert weights, then improve as applications, replies, interviews, offers, and rejections produce outcome data.
           </p>
         </SectionReveal>
       </section>
@@ -55,12 +55,12 @@ export default function WorkflowPage() {
       <section className="page-shell pb-24">
         <SectionReveal>
           <div className="rounded-[2rem] border border-border bg-card p-8 shadow-[var(--shadow-soft)]">
-            <p className="text-sm font-medium text-muted-foreground">What changes after the first application</p>
-            <h2 className="mt-4 max-w-[720px] text-3xl font-semibold tracking-[-0.04em]">
+            <p className="eyebrow">What changes after the first application</p>
+            <h2 className="mt-4 max-w-[720px] font-display text-[clamp(28px,4vw,44px)] font-normal tracking-[-0.025em]">
               Outcomes become training data without changing the product flow.
             </h2>
             <p className="mt-4 max-w-[780px] text-sm leading-6 text-muted-foreground">
-              When a role is applied to, replied to, interviewed for, offered, rejected, or closed, Atlas can reconstruct the feature snapshot that existed at the time. That is what makes later learned ranking possible: the interface stays calm, while the scoring layer becomes more accurate.
+              When a role is applied to, replied to, interviewed for, offered, rejected, or closed, MyJobAtlas can reconstruct the feature snapshot that existed at the time. That is what makes later learned ranking possible: the interface stays calm, while the scoring layer becomes more accurate.
             </p>
           </div>
         </SectionReveal>

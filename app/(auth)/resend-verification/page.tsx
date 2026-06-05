@@ -57,7 +57,7 @@ export default function ResendVerificationPage() {
     >
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.26em] text-muted-foreground">Verification</p>
-        <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em]">Send a new link</h2>
+        <h2 className="mt-3 font-display text-[clamp(28px,4vw,44px)] font-normal tracking-[-0.025em]">Send a new link</h2>
         <p className="mt-2 text-sm leading-6 text-muted-foreground">Use the latest email to activate your account.</p>
       </div>
       <div className="mt-8">

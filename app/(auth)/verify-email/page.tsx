@@ -59,7 +59,7 @@ function VerifyEmailContent() {
     >
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.26em] text-muted-foreground">Activation</p>
-        <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em]">Verify email</h2>
+        <h2 className="mt-3 font-display text-[clamp(28px,4vw,44px)] font-normal tracking-[-0.025em]">Verify email</h2>
         <p className="mt-2 text-sm leading-6 text-muted-foreground">Activate the account before the first login.</p>
       </div>
       <div className="mt-8 space-y-5">

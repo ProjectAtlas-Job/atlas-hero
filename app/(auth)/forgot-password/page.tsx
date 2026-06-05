@@ -42,7 +42,7 @@ export default function ForgotPasswordPage() {
 
   return (
     <AuthShell
-      description="Enter your email and Atlas will send a reset link if the account is eligible for recovery."
+      description="Enter your email and MyJobAtlas will send a reset link if the account is eligible for recovery."
       eyebrow="Account recovery"
       title="Request a password reset"
       footer={
@@ -57,7 +57,7 @@ export default function ForgotPasswordPage() {
     >
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.26em] text-muted-foreground">Password</p>
-        <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em]">Forgot password</h2>
+        <h2 className="mt-3 font-display text-[clamp(28px,4vw,44px)] font-normal tracking-[-0.025em]">Forgot password</h2>
         <p className="mt-2 text-sm leading-6 text-muted-foreground">We will send a reset link if the account exists.</p>
       </div>
       <div className="mt-8">

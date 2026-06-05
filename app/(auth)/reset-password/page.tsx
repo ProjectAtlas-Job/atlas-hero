@@ -61,7 +61,7 @@ function ResetPasswordContent() {
 
   return (
     <AuthShell
-      description="Use the reset link from your email to set a new password and return to Atlas."
+      description="Use the reset link from your email to set a new password and return to MyJobAtlas."
       eyebrow="Account recovery"
       title="Choose a new password"
       footer={
@@ -76,7 +76,7 @@ function ResetPasswordContent() {
     >
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.26em] text-muted-foreground">Password</p>
-        <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em]">Reset password</h2>
+        <h2 className="mt-3 font-display text-[clamp(28px,4vw,44px)] font-normal tracking-[-0.025em]">Reset password</h2>
         <p className="mt-2 text-sm leading-6 text-muted-foreground">Choose a new password for your account.</p>
       </div>
       <div className="mt-8">

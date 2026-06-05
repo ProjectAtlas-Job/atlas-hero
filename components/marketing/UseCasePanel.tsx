@@ -4,27 +4,28 @@ import { SectionReveal } from "@/components/marketing/SectionReveal";
 export function UseCasePanel() {
   return (
     <section className="page-shell pb-24">
-      <div className="grid gap-8 rounded-[2rem] border border-border bg-card p-6 shadow-[var(--shadow-soft)] lg:grid-cols-[0.75fr_1fr] lg:p-10">
+      <div className="surface grid gap-10 p-8 lg:grid-cols-[0.8fr_1fr] lg:p-12">
         <SectionReveal>
-          <p className="text-sm font-medium text-muted-foreground">Who it is for</p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] sm:text-4xl">
+          <p className="eyebrow">(03) Who it is for</p>
+          <h2 className="mt-5 font-display text-[clamp(30px,4vw,48px)] font-normal leading-[1.04] tracking-[-0.03em] text-ink">
             Built for people who need a repeatable system.
           </h2>
-          <p className="mt-4 text-sm leading-6 text-muted-foreground">
-            Atlas works best when the search has multiple moving parts: roles, documents, people, deadlines, and follow-ups.
+          <p className="mt-5 text-sm leading-6 text-muted-foreground">
+            MyJobAtlas works best when the search has multiple moving parts: roles, documents, people, deadlines, and
+            follow-ups.
           </p>
         </SectionReveal>
 
         <div className="grid gap-3">
           {useCases.map((useCase) => (
             <SectionReveal key={useCase.title}>
-              <article className="group rounded-[1.5rem] border border-border bg-background p-5 transition duration-200 hover:-translate-y-0.5 hover:bg-muted">
+              <article className="surface-flat surface-hover group p-6">
                 <div className="flex items-start gap-4">
-                  <span className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-muted transition-colors group-hover:bg-card">
-                    <useCase.icon className="size-5" strokeWidth={1.75} />
+                  <span className="flex size-10 shrink-0 items-center justify-center rounded-2xl border border-border bg-cream text-ink">
+                    <useCase.icon className="size-5" strokeWidth={1.5} />
                   </span>
                   <div>
-                    <h3 className="text-base font-semibold tracking-[-0.02em]">{useCase.title}</h3>
+                    <h3 className="font-display text-lg font-normal tracking-[-0.01em] text-ink">{useCase.title}</h3>
                     <p className="mt-2 text-sm leading-6 text-muted-foreground">{useCase.text}</p>
                   </div>
                 </div>
