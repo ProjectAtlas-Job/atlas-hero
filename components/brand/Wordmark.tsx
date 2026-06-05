@@ -30,10 +30,7 @@ export function Wordmark({
         )}
       />
       {markOnly ? null : (
-        <span
-          className="font-display font-medium tracking-[-0.02em]"
-          style={{ fontSize: size + 1 }}
-        >
+        <span className="brand-wordmark" style={{ fontSize: size + 1 }}>
           My Job Atlas
         </span>
       )}
