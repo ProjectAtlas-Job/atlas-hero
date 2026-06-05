@@ -19,7 +19,7 @@ export function FeatureGrid() {
         {featureCards.map((feature) => (
           <SectionReveal key={feature.title}>
             <article className="surface surface-hover group h-full p-8">
-              <div className="flex size-11 items-center justify-center rounded-2xl border border-border bg-cream text-ink">
+              <div className="flex size-11 items-center justify-center rounded-2xl border border-border bg-panel text-ink">
                 <feature.icon className="size-5" strokeWidth={1.5} />
               </div>
               <h3 className="mt-8 font-display text-2xl font-normal tracking-[-0.02em] text-ink">{feature.title}</h3>

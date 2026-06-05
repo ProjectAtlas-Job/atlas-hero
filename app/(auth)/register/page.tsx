@@ -103,7 +103,7 @@ export default function RegisterPage() {
         <p className="mt-2 text-sm leading-6 text-muted-foreground">Begin with your MyJobAtlas profile.</p>
       </div>
       <div className="mt-8 space-y-6">
-        <SocialAuthButtons label="Sign up" />
+        <SocialAuthButtons />
         <Form {...form}>
           <form className="space-y-5" onSubmit={onSubmit}>
             <FormField

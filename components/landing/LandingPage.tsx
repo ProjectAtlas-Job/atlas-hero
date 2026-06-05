@@ -1,5 +1,4 @@
 import { FeatureGrid } from "@/components/marketing/FeatureGrid";
-import { FinalCta } from "@/components/marketing/FinalCta";
 import { HeroSection } from "@/components/marketing/HeroSection";
 import { MarketingShell } from "@/components/marketing/MarketingShell";
 import { MetricStrip } from "@/components/marketing/MetricStrip";
@@ -14,7 +13,6 @@ export function LandingPage() {
       <MetricStrip />
       <WorkflowTimeline />
       <UseCasePanel />
-      <FinalCta />
     </MarketingShell>
   );
 }

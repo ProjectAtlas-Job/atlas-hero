@@ -8,22 +8,18 @@ export function MarketingNav() {
   return (
     <header className="fixed inset-x-0 top-4 z-40">
       <div className="page-shell">
-        <div className="nav-pill flex h-14 items-center justify-between gap-6 pl-5 pr-2">
+        <div className="nav-pill grid min-h-[56px] grid-cols-[auto_1fr_auto] items-center gap-4 px-4 sm:px-5">
           <Wordmark size={16} />
 
-          <nav className="hidden items-center gap-1 md:flex" aria-label="Primary navigation">
+          <nav className="hidden items-center justify-center gap-[clamp(20px,4vw,52px)] md:flex" aria-label="Primary navigation">
             {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-full px-3.5 py-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-muted-foreground transition-all duration-200 hover:-translate-y-px hover:text-foreground focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring"
-              >
+              <Link key={item.href} href={item.href} className="nav-link py-2">
                 {item.label}
               </Link>
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center justify-end gap-2">
             <ButtonLink href="/login" size="sm" variant="ghost">
               Login
             </ButtonLink>
