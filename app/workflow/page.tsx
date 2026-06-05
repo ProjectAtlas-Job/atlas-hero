@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 
-import { FinalCta } from "@/components/marketing/FinalCta";
 import { MarketingShell } from "@/components/marketing/MarketingShell";
 import { SectionReveal } from "@/components/marketing/SectionReveal";
 import { WorkflowTimeline } from "@/components/marketing/WorkflowTimeline";
@@ -65,7 +64,6 @@ export default function WorkflowPage() {
           </div>
         </SectionReveal>
       </section>
-      <FinalCta />
     </MarketingShell>
   );
 }

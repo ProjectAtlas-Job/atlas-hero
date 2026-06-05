@@ -2,17 +2,20 @@
 @import "tw-animate-css";
 
 @theme inline {
-  /* Editorial palette (exposed as bg-paper, text-ink, text-sage, …) */
+  /* Editorial palette (bg-paper, text-ink, text-muted-ink, border-border …) */
   --color-paper: var(--paper);
-  --color-cream: var(--cream);
+  --color-paper-soft: var(--paper-soft);
+  --color-paper-warm: var(--paper-warm);
+  --color-panel: var(--panel);
+  --color-panel-raised: var(--panel-raised);
   --color-ink: var(--ink);
+  --color-black: var(--black);
   --color-charcoal: var(--charcoal);
-  --color-sage: var(--sage);
-  --color-butter: var(--butter);
-  --color-grey-100: var(--grey-100);
-  --color-grey-200: var(--grey-200);
-  --color-grey-300: var(--grey-300);
-  --color-grey-600: var(--grey-600);
+  --color-graphite: var(--graphite);
+  --color-muted-ink: var(--muted-ink);
+  --color-soft-muted: var(--soft-muted);
+  --color-hairline: var(--hairline);
+  --color-border-soft: var(--border-soft);
 
   /* shadcn-style semantic tokens mapped onto the editorial palette */
   --color-background: var(--background);
@@ -35,82 +38,93 @@
   --color-ring: var(--ring);
 
   --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
-  --font-mono: ui-monospace, SFMono-Regular, monospace;
+  --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, monospace;
 
-  --radius-sm: 0.75rem;
-  --radius-md: 1.125rem;
-  --radius-lg: 1.5rem;
-  --radius-xl: 1.75rem;
-  --radius-2xl: 2rem;
+  --radius-sm: 0.625rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.125rem;
+  --radius-xl: 1.375rem;
+  --radius-2xl: 1.75rem;
 
-  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
-  --ease-in-out-soft: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-soft: cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 :root {
-  /* Editorial palette — light */
-  --paper: #f7f5f1;
-  --cream: #f1ede4;
-  --ink: #111111;
-  --charcoal: #282828;
-  --sage: #a6b39a;
-  --butter: #e9ddaf;
-  --grey-100: #e7e8ea;
-  --grey-200: #d9d6cf;
-  --grey-300: #c4c6c8;
-  --grey-600: #6c6a65;
+  /* Editorial palette — light (design system §3.1) */
+  --black: #111111;
+  --ink: #171717;
+  --charcoal: #1f1f1f;
+  --graphite: #4f4f4f;
+  --muted-ink: #747474;
+  --soft-muted: #9a9a9a;
+
+  --paper: #f8f7f3;
+  --paper-soft: #fbfaf7;
+  --paper-warm: #f3f0ea;
+  --panel: #f6f4ee;
+  --panel-raised: #fffefa;
+
+  --border: #dedbd2;
+  --border-soft: #ebe8df;
+  --hairline: rgba(17, 17, 17, 0.12);
 
   /* Semantic */
   --background: var(--paper);
   --foreground: var(--ink);
-  --card: #ffffff;
+  --card: var(--paper-soft);
   --card-foreground: var(--ink);
-  --popover: #ffffff;
+  --popover: var(--panel-raised);
   --popover-foreground: var(--ink);
-  --primary: var(--ink);
+  --primary: var(--black);
   --primary-foreground: var(--paper);
-  --secondary: var(--cream);
+  --secondary: var(--panel);
   --secondary-foreground: var(--charcoal);
-  --muted: var(--cream);
-  --muted-foreground: var(--grey-600);
-  --accent: var(--sage);
-  --accent-foreground: var(--ink);
-  --destructive: #b4453a;
-  --border: rgba(17, 17, 17, 0.12);
+  --muted: var(--panel);
+  --muted-foreground: var(--muted-ink);
+  --accent: var(--black);
+  --accent-foreground: var(--paper);
+  --destructive: #9c4a3f;
   --input: rgba(17, 17, 17, 0.16);
-  --ring: rgba(166, 179, 154, 0.55);
+  --ring: rgba(17, 17, 17, 0.4);
 
-  --shadow-soft: 0 1px 0 rgba(17, 17, 17, 0.03), 0 24px 70px -40px rgba(17, 17, 17, 0.18);
-  --shadow-float: 0 30px 90px -45px rgba(17, 17, 17, 0.28);
+  --shadow-soft: 0 1px 0 rgba(17, 17, 17, 0.03), 0 18px 48px -34px rgba(17, 17, 17, 0.18);
+  --shadow-float: 0 20px 80px -40px rgba(17, 17, 17, 0.28);
 }
 
 .dark {
-  /* Monochrome warm dark per design system §10 */
-  --paper: #101010;
-  --cream: #171717;
-  --ink: #f4f1ea;
+  /* Monochrome warm dark */
+  --black: #f4f1ea;
+  --ink: #efece4;
   --charcoal: #d8d4ca;
-  --sage: #a6b39a;
-  --butter: #e9ddaf;
-  --grey-100: #252525;
-  --grey-200: #343434;
-  --grey-300: #666666;
-  --grey-600: #aaa59b;
+  --graphite: #b4b0a6;
+  --muted-ink: #9a958b;
+  --soft-muted: #6f6b62;
 
-  --card: #1a1a1a;
-  --popover: #1a1a1a;
+  --paper: #101010;
+  --paper-soft: #161614;
+  --paper-warm: #1b1a17;
+  --panel: #191816;
+  --panel-raised: #1f1e1b;
+
+  --border: rgba(244, 241, 234, 0.14);
+  --border-soft: rgba(244, 241, 234, 0.09);
+  --hairline: rgba(244, 241, 234, 0.12);
+
+  --card: var(--paper-soft);
+  --popover: var(--panel-raised);
   --primary: var(--ink);
   --primary-foreground: #101010;
-  --secondary: var(--cream);
+  --secondary: var(--panel);
   --secondary-foreground: var(--charcoal);
-  --muted: var(--cream);
-  --muted-foreground: var(--grey-600);
-  --accent: var(--sage);
+  --muted: var(--panel);
+  --muted-foreground: var(--muted-ink);
+  --accent: var(--ink);
   --accent-foreground: #101010;
-  --border: rgba(244, 241, 234, 0.14);
-  --input: rgba(244, 241, 234, 0.2);
-  --ring: rgba(166, 179, 154, 0.5);
+  --destructive: #c98a7f;
+  --input: rgba(244, 241, 234, 0.18);
+  --ring: rgba(244, 241, 234, 0.36);
 }
 
 * {
@@ -128,28 +142,32 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, sans-serif;
   background:
-    radial-gradient(circle at 15% 18%, rgba(17, 17, 17, 0.03), transparent 30%),
-    radial-gradient(circle at 85% 12%, rgba(166, 179, 154, 0.14), transparent 26%),
-    linear-gradient(180deg, var(--paper) 0%, var(--cream) 100%);
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.7), transparent 26rem),
+    radial-gradient(circle at 80% 0%, rgba(238, 235, 225, 0.55), transparent 24rem),
+    linear-gradient(180deg, var(--paper-soft) 0%, var(--paper) 100%);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
 }
 
-/* Subtle paper grain */
+/* Paper grain — fine dot texture (design system §3.3) */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.5;
+  opacity: 0.26;
   mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  background-image: radial-gradient(rgba(17, 17, 17, 0.16) 0.45px, transparent 0.45px);
+  background-size: 3px 3px;
 }
 
 .dark body::before {
-  opacity: 0.3;
+  opacity: 0.16;
+  mix-blend-mode: screen;
+  background-image: radial-gradient(rgba(244, 241, 234, 0.12) 0.45px, transparent 0.45px);
 }
 
 button,
@@ -171,16 +189,21 @@ input:focus,
 textarea:focus {
   outline: none;
   border-color: var(--ring);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring) 45%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring) 24%, transparent);
+}
+
+:focus-visible {
+  outline: 1px solid var(--black);
+  outline-offset: 3px;
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--sage) 42%, transparent);
+  background: rgba(17, 17, 17, 0.12);
 }
 
 /* ---- Layout ---- */
 .page-shell {
-  width: min(100% - 32px, 1280px);
+  width: min(100% - 32px, 1480px);
   margin-inline: auto;
 }
 
@@ -189,21 +212,22 @@ textarea:focus {
   font-family: var(--font-display);
 }
 
+.section-kicker,
 .eyebrow {
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-weight: 500;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--grey-600);
+  color: var(--muted-ink);
 }
 
 .page-title {
   font-family: var(--font-display);
   font-weight: 400;
-  letter-spacing: -0.035em;
-  line-height: 1;
-  color: var(--ink);
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+  color: var(--black);
 }
 
 .page-description {
@@ -211,111 +235,200 @@ textarea:focus {
   line-height: 1.6;
 }
 
-/* ---- Surfaces ---- */
+/* ---- Section divider rule ---- */
+.section-rule {
+  height: 1px;
+  background: var(--border-soft);
+  border: 0;
+}
+
+/* ---- Surfaces / cards ---- */
 .surface {
   border: 1px solid var(--border);
-  background: color-mix(in srgb, var(--card) 92%, transparent);
+  background: color-mix(in srgb, var(--paper-soft) 86%, transparent);
   border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-soft);
 }
 
 .surface-flat {
   border: 1px solid var(--border);
-  background: color-mix(in srgb, var(--card) 88%, transparent);
+  background: color-mix(in srgb, var(--paper-soft) 72%, transparent);
   border-radius: var(--radius-xl);
 }
 
 .surface-hover {
   transition:
-    transform 420ms var(--ease-out-soft),
-    box-shadow 420ms var(--ease-out-soft),
-    border-color 420ms var(--ease-out-soft);
+    transform 320ms var(--ease-out-soft),
+    box-shadow 320ms var(--ease-out-soft),
+    border-color 320ms ease;
 }
 
 .surface-hover:hover {
   transform: translateY(-6px);
-  border-color: rgba(17, 17, 17, 0.26);
-  box-shadow: var(--shadow-float);
+  border-color: rgba(17, 17, 17, 0.24);
+  box-shadow: 0 18px 48px rgba(17, 17, 17, 0.08);
 }
 
 .dark .surface-hover:hover {
   border-color: rgba(244, 241, 234, 0.28);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5);
 }
 
-/* ---- Chips / tags ---- */
+/* ---- Chips / tags (design system §10.4) ---- */
 .chip {
   display: inline-flex;
   align-items: center;
-  height: 26px;
-  padding-inline: 11px;
+  height: 24px;
+  padding-inline: 10px;
   border: 1px solid var(--border);
   border-radius: 999px;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--charcoal);
-  background: color-mix(in srgb, var(--card) 40%, transparent);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: var(--muted-ink);
+  background: color-mix(in srgb, var(--paper-soft) 40%, transparent);
+  transition: border-color 200ms ease, color 200ms ease, background 200ms ease;
+}
+
+.chip:hover {
+  border-color: rgba(17, 17, 17, 0.22);
+  color: var(--black);
+  background: color-mix(in srgb, var(--paper-soft) 60%, transparent);
 }
 
 .chip[data-active="true"] {
-  background: color-mix(in srgb, var(--sage) 44%, transparent);
-  border-color: rgba(17, 17, 17, 0.08);
-  color: var(--ink);
+  border-color: var(--black);
+  color: var(--paper);
+  background: var(--black);
 }
 
-/* ---- Nav pill ---- */
+/* ---- Nav pill (design system §6) ---- */
 .nav-pill {
   border: 1px solid var(--border);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--paper) 78%, transparent);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--paper-soft) 78%, transparent);
   backdrop-filter: blur(18px);
-  box-shadow: 0 10px 30px -18px rgba(17, 17, 17, 0.18);
 }
 
-/* ---- Text link with arrow ---- */
-.text-link {
+.nav-link {
   position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--ink);
-  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--black);
+  opacity: 0.84;
+  transition: opacity 180ms ease;
 }
 
-.text-link::after {
+.nav-link::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px;
-  width: 100%;
+  right: 0;
+  bottom: -6px;
   height: 1px;
   background: currentColor;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 260ms var(--ease-out-soft);
+  transition: transform 220ms var(--ease-out-soft);
 }
 
-.text-link:hover::after {
+.nav-link:hover,
+.nav-link[data-active="true"] {
+  opacity: 1;
+}
+
+.nav-link:hover::after,
+.nav-link[data-active="true"]::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-/* ---- Star divider ---- */
-.star-divider {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 20px;
+/* ---- Text link with sliding underline + arrow (design system §12.1) ---- */
+.text-link {
+  display: inline-flex;
   align-items: center;
-  color: var(--sage);
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: none;
 }
 
-.star-divider span {
+.text-link__label {
+  position: relative;
+}
+
+.text-link__label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
   height: 1px;
-  background: var(--border);
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 220ms var(--ease-out-soft);
 }
 
-/* ---- Reveal on scroll ---- */
+.text-link:hover .text-link__label::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.text-link__arrow {
+  transition: transform 220ms var(--ease-out-soft);
+}
+
+.text-link:hover .text-link__arrow {
+  transform: translateX(5px);
+}
+
+/* ---- Circular icon button (design system §12.2) ---- */
+.icon-button {
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--black);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--black);
+  transition:
+    transform 420ms var(--ease-out-soft),
+    background 220ms ease,
+    color 220ms ease;
+}
+
+.icon-button:hover {
+  transform: rotate(22.5deg) scale(1.03);
+  background: var(--black);
+  color: var(--paper);
+}
+
+/* ---- Scroll reveal (design system §14.4) ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  clip-path: inset(0 0 16% 0);
+  transition:
+    opacity 700ms var(--ease-out-soft),
+    transform 700ms var(--ease-out-soft),
+    clip-path 700ms var(--ease-out-soft);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  clip-path: inset(0 0 0 0);
+}
+
+/* ---- Page entry ---- */
 .page-in {
   animation: page-in 320ms var(--ease-out-soft) both;
 }
@@ -335,9 +448,14 @@ textarea:focus {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
+    animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
+    transition-duration: 0.001ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    clip-path: none;
   }
 }

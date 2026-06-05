@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 
-import { FinalCta } from "@/components/marketing/FinalCta";
 import { MarketingShell } from "@/components/marketing/MarketingShell";
 import { SectionReveal } from "@/components/marketing/SectionReveal";
 import { UseCasePanel } from "@/components/marketing/UseCasePanel";
@@ -88,7 +87,6 @@ export default function AboutPage() {
       </section>
 
       <UseCasePanel />
-      <FinalCta />
     </MarketingShell>
   );
 }

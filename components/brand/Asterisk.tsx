@@ -8,10 +8,11 @@ type AsteriskProps = {
 };
 
 /**
- * The MyJobAtlas brand mark: a soft, slightly organic six-point asterisk.
- * Rounded caps, hand-made feel — not a geometric spinner. Inherits `currentColor`.
+ * The MyJobAtlas brand mark: a soft eight-point asterisk/starburst.
+ * Rounded caps, slightly organic — a confident signature, not a spinner.
+ * Inherits `currentColor`.
  */
-export function Asterisk({ className, size = 24, strokeWidth = 2.4, title }: AsteriskProps) {
+export function Asterisk({ className, size = 24, strokeWidth = 2.2, title }: AsteriskProps) {
   return (
     <svg
       className={cn("inline-block", className)}
@@ -27,9 +28,10 @@ export function Asterisk({ className, size = 24, strokeWidth = 2.4, title }: Ast
       aria-label={title}
     >
       {title ? <title>{title}</title> : null}
-      <line x1="12" y1="3" x2="12" y2="21" />
-      <line x1="3.8" y1="7.5" x2="20.2" y2="16.5" />
-      <line x1="3.8" y1="16.5" x2="20.2" y2="7.5" />
+      <line x1="12" y1="2.5" x2="12" y2="21.5" />
+      <line x1="2.5" y1="12" x2="21.5" y2="12" />
+      <line x1="5.3" y1="5.3" x2="18.7" y2="18.7" />
+      <line x1="18.7" y1="5.3" x2="5.3" y2="18.7" />
     </svg>
   );
 }

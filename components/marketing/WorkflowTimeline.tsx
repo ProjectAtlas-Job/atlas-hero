@@ -19,8 +19,8 @@ export function WorkflowTimeline({ compact = false }: { compact?: boolean }) {
         {workflowSteps.map((step, index) => (
           <SectionReveal key={step.title}>
             <article className="surface surface-hover group grid gap-5 p-6 md:grid-cols-[64px_56px_1fr] md:items-start">
-              <div className="font-display text-2xl text-grey-300">0{index + 1}</div>
-              <span className="flex size-11 items-center justify-center rounded-2xl border border-border bg-cream text-ink">
+              <div className="font-mono text-sm text-soft-muted">0{index + 1}</div>
+              <span className="flex size-11 items-center justify-center rounded-2xl border border-border bg-panel text-ink">
                 <step.icon className="size-5" strokeWidth={1.5} />
               </span>
               <div>

@@ -12,7 +12,7 @@ type WordmarkProps = {
   markOnly?: boolean;
 };
 
-/** MyJobAtlas lockup: organic asterisk + editorial serif wordmark. */
+/** MyJobAtlas lockup: eight-point asterisk + editorial Playfair wordmark. */
 export function Wordmark({
   href = "/",
   className,
@@ -23,16 +23,16 @@ export function Wordmark({
   const content = (
     <span className={cn("group inline-flex items-center gap-2 text-ink", className)}>
       <Asterisk
-        size={size + 4}
+        size={size + 3}
         className={cn(
-          "text-sage transition-transform duration-500 ease-out-soft group-hover:rotate-180",
+          "text-ink transition-transform duration-500 ease-out-soft group-hover:rotate-[22.5deg] group-hover:scale-105",
           starClassName,
         )}
       />
       {markOnly ? null : (
         <span
-          className="font-display font-medium tracking-[-0.01em]"
-          style={{ fontSize: size }}
+          className="font-display font-medium tracking-[-0.02em]"
+          style={{ fontSize: size + 1 }}
         >
           MyJobAtlas
         </span>
@@ -42,7 +42,7 @@ export function Wordmark({
 
   if (href) {
     return (
-      <Link href={href} aria-label="MyJobAtlas home" className="inline-flex">
+      <Link href={href} aria-label="MyJobAtlas home" className="inline-flex outline-none focus-visible:opacity-70">
         {content}
       </Link>
     );

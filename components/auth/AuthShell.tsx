@@ -39,16 +39,14 @@ export function AuthShell({ title, description, eyebrow, children, footer, class
           <ul className="space-y-3">
             {FEATURES.map((feature) => (
               <li key={feature} className="flex items-center gap-3 text-sm text-muted-foreground">
-                <Asterisk size={14} className="shrink-0 text-sage" />
+                <Asterisk size={13} className="shrink-0 text-ink" />
                 {feature}
               </li>
             ))}
           </ul>
         </div>
 
-        <div className="surface-flat p-5 text-[13px] leading-5 text-muted-foreground">
-          Create an account, confirm your email, and MyJobAtlas opens your workspace right after sign in.
-        </div>
+        <p className="section-kicker">(Job search, organized)</p>
       </aside>
 
       <section className="flex flex-1 items-center justify-center px-4 py-12">

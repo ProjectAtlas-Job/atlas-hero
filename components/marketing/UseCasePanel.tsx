@@ -21,7 +21,7 @@ export function UseCasePanel() {
             <SectionReveal key={useCase.title}>
               <article className="surface-flat surface-hover group p-6">
                 <div className="flex items-start gap-4">
-                  <span className="flex size-10 shrink-0 items-center justify-center rounded-2xl border border-border bg-cream text-ink">
+                  <span className="flex size-10 shrink-0 items-center justify-center rounded-2xl border border-border bg-panel text-ink">
                     <useCase.icon className="size-5" strokeWidth={1.5} />
                   </span>
                   <div>
