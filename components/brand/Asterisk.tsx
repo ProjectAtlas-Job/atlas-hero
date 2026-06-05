@@ -8,7 +8,7 @@ type AsteriskProps = {
 };
 
 /**
- * The MyJobAtlas brand mark: a soft eight-point asterisk/starburst.
+ * The My Job Atlas brand mark: a soft eight-point asterisk/starburst.
  * Rounded caps, slightly organic — a confident signature, not a spinner.
  * Inherits `currentColor`.
  */

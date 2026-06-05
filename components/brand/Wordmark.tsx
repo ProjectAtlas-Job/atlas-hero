@@ -12,7 +12,7 @@ type WordmarkProps = {
   markOnly?: boolean;
 };
 
-/** MyJobAtlas lockup: eight-point asterisk + editorial Playfair wordmark. */
+/** My Job Atlas lockup: eight-point asterisk + editorial Playfair wordmark. */
 export function Wordmark({
   href = "/",
   className,
@@ -34,7 +34,7 @@ export function Wordmark({
           className="font-display font-medium tracking-[-0.02em]"
           style={{ fontSize: size + 1 }}
         >
-          MyJobAtlas
+          My Job Atlas
         </span>
       )}
     </span>
@@ -42,7 +42,7 @@ export function Wordmark({
 
   if (href) {
     return (
-      <Link href={href} aria-label="MyJobAtlas home" className="inline-flex outline-none focus-visible:opacity-70">
+      <Link href={href} aria-label="My Job Atlas home" className="inline-flex outline-none focus-visible:opacity-70">
         {content}
       </Link>
     );

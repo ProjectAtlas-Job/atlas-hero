@@ -6,13 +6,13 @@ import { WorkflowTimeline } from "@/components/marketing/WorkflowTimeline";
 import { siteUrl, workflowSteps } from "@/components/marketing/content";
 
 export const metadata: Metadata = {
-  title: "MyJobAtlas Workflow | Discovery, scoring, applications, outcomes",
-  description: "See how MyJobAtlas moves from job and company discovery to explainable matching, resume improvement, applications, and outcome learning.",
+  title: "My Job Atlas Workflow | Discovery, scoring, applications, outcomes",
+  description: "See how My Job Atlas moves from job and company discovery to explainable matching, resume improvement, applications, and outcome learning.",
   alternates: {
     canonical: `${siteUrl}/workflow`,
   },
   openGraph: {
-    title: "MyJobAtlas Workflow",
+    title: "My Job Atlas Workflow",
     description: "Job discovery, candidate scoring, company intelligence, applications, and outcome learning in one flow.",
     url: `${siteUrl}/workflow`,
   },
@@ -28,7 +28,7 @@ export default function WorkflowPage() {
             The loop: collect signals, score fit, act, learn.
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            The v2 architecture separates raw signal extraction from scoring. That means MyJobAtlas can work on day one with transparent expert weights, then improve as applications, replies, interviews, offers, and rejections produce outcome data.
+            The v2 architecture separates raw signal extraction from scoring. That means My Job Atlas can work on day one with transparent expert weights, then improve as applications, replies, interviews, offers, and rejections produce outcome data.
           </p>
         </SectionReveal>
       </section>
@@ -59,7 +59,7 @@ export default function WorkflowPage() {
               Outcomes become training data without changing the product flow.
             </h2>
             <p className="mt-4 max-w-[780px] text-sm leading-6 text-muted-foreground">
-              When a role is applied to, replied to, interviewed for, offered, rejected, or closed, MyJobAtlas can reconstruct the feature snapshot that existed at the time. That is what makes later learned ranking possible: the interface stays calm, while the scoring layer becomes more accurate.
+              When a role is applied to, replied to, interviewed for, offered, rejected, or closed, My Job Atlas can reconstruct the feature snapshot that existed at the time. That is what makes later learned ranking possible: the interface stays calm, while the scoring layer becomes more accurate.
             </p>
           </div>
         </SectionReveal>

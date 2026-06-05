@@ -42,7 +42,7 @@ export default function ForgotPasswordPage() {
 
   return (
     <AuthShell
-      description="Enter your email and MyJobAtlas will send a reset link if the account is eligible for recovery."
+      description="Enter your email and My Job Atlas will send a reset link if the account is eligible for recovery."
       eyebrow="Account recovery"
       title="Request a password reset"
       footer={

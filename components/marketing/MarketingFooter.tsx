@@ -29,11 +29,11 @@ function Column({ kicker, children, index }: { kicker: string; children: React.R
 export function MarketingFooter() {
   const reduceMotion = useReducedMotion();
   return (
-    <footer className="page-shell pb-10 pt-24">
-      <div className="rounded-[22px] border border-border bg-paper-warm/60 p-8 sm:p-12 lg:p-16">
-        <div className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-center">
+    <footer className="page-shell pb-8 pt-14">
+      <div className="rounded-[20px] border border-border bg-paper-warm/60 p-6 sm:p-8 lg:p-10">
+        <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
           <motion.h2
-            className="max-w-[760px] font-display text-[clamp(40px,6vw,104px)] font-normal leading-[0.96] tracking-[-0.05em] text-black"
+            className="max-w-[620px] font-display text-[clamp(32px,4.4vw,68px)] font-normal leading-[1.0] tracking-[-0.045em] text-black"
             initial={reduceMotion ? false : { opacity: 0, y: 30 }}
             whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
@@ -48,15 +48,15 @@ export function MarketingFooter() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: EASE_OUT, delay: 0.2 }}
           >
-            <Link href="/register" aria-label="Get started" className="icon-button size-[88px]">
-              <Asterisk size={38} strokeWidth={1.8} />
+            <Link href="/register" aria-label="Get started" className="icon-button size-16">
+              <Asterisk size={30} strokeWidth={1.8} />
             </Link>
           </motion.div>
         </div>
 
-        <hr className="section-rule my-12" />
+        <hr className="section-rule my-8" />
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3">
           <Column kicker="Explore" index={0}>
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className="text-sm text-foreground/90 transition-colors hover:text-foreground">
@@ -75,7 +75,7 @@ export function MarketingFooter() {
               India-first job-search infrastructure. Built for candidate signals, fit scoring, and referrals.
             </p>
             <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
-              © {new Date().getFullYear()} MyJobAtlas
+              © {new Date().getFullYear()} My Job Atlas
             </p>
           </Column>
         </div>

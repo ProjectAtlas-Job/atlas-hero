@@ -28,8 +28,8 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "MyJobAtlas | Job search, organized",
-    template: "%s | MyJobAtlas",
+    default: "My Job Atlas | Job search, organized",
+    template: "%s | My Job Atlas",
   },
   description:
     "India-first job search infrastructure for candidate signals, company intelligence, fit scoring, applications, and referrals.",
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: siteUrl,
-    siteName: "MyJobAtlas",
-    title: "MyJobAtlas | Job search, organized",
+    siteName: "My Job Atlas",
+    title: "My Job Atlas | Job search, organized",
     description: "India-first job search infrastructure for candidate signals, fit scoring, applications, and referrals.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MyJobAtlas | Job search, organized",
+    title: "My Job Atlas | Job search, organized",
     description: "India-first job search infrastructure for candidate signals, fit scoring, applications, and referrals.",
   },
 };
@@ -59,7 +59,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "MyJobAtlas",
+    name: "My Job Atlas",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     url: siteUrl,
