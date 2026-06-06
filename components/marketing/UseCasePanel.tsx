@@ -11,7 +11,7 @@ export function UseCasePanel() {
             Built for people who need a repeatable system.
           </h2>
           <p className="mt-5 text-sm leading-6 text-muted-foreground">
-            MyJobAtlas works best when the search has multiple moving parts: roles, documents, people, deadlines, and
+            Job Atlas works best when the search has multiple moving parts: roles, documents, people, deadlines, and
             follow-ups.
           </p>
         </SectionReveal>

@@ -24,7 +24,7 @@ export function SocialAuthButtons() {
             href={href}
             aria-label={`Continue with ${name}`}
             title={`Continue with ${name}`}
-            className="grid size-12 place-items-center rounded-full border border-border bg-card text-ink transition-all duration-300 ease-out-soft hover:-translate-y-0.5 hover:border-black hover:bg-black hover:text-paper focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="grid size-12 place-items-center rounded-full border border-border bg-card text-ink transition-all duration-300 ease-out-soft hover:border-black hover:bg-black hover:text-paper focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             <Icon size={20} />
           </a>

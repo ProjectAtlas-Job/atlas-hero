@@ -25,12 +25,12 @@ export const workflowSteps = [
   {
     icon: Search,
     title: "Collect the right market",
-    text: "MyJobAtlas keeps a shared job and company index across Indian job boards, startup listings, internships, and manually submitted URLs. Each role is parsed into skills, seniority, location, salary, source, and freshness signals.",
+    text: "Job Atlas keeps a shared job and company index across Indian job boards, startup listings, internships, and manually submitted URLs. Each role is parsed into skills, seniority, location, salary, source, and freshness signals.",
   },
   {
     icon: Radar,
     title: "Score fit honestly",
-    text: "Matching is not just resume-to-job similarity. MyJobAtlas combines proven skills, seniority fit, company quality, location, compensation, posting freshness, and candidate strength into an explainable match score.",
+    text: "Matching is not just resume-to-job similarity. Job Atlas combines proven skills, seniority fit, company quality, location, compensation, posting freshness, and candidate strength into an explainable match score.",
   },
   {
     icon: FileText,

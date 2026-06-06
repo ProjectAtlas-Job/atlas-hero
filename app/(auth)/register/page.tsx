@@ -87,7 +87,7 @@ export default function RegisterPage() {
     <AuthShell
       description="Create your account, confirm your email, and step straight into your workspace."
       eyebrow="New account"
-      title="Create your MyJobAtlas account"
+      title="Create your Job Atlas account"
       footer={
         <p className="text-sm text-muted-foreground">
           Already have an account?{" "}
@@ -100,7 +100,7 @@ export default function RegisterPage() {
       <div>
         <p className="eyebrow">Start</p>
         <h2 className="mt-3 font-display text-[2rem] font-normal tracking-[-0.02em]">Create account</h2>
-        <p className="mt-2 text-sm leading-6 text-muted-foreground">Begin with your MyJobAtlas profile.</p>
+        <p className="mt-2 text-sm leading-6 text-muted-foreground">Begin with your Job Atlas profile.</p>
       </div>
       <div className="mt-8 space-y-6">
         <SocialAuthButtons />

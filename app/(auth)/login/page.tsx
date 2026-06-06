@@ -65,7 +65,7 @@ export default function LoginPage() {
     <AuthShell
       description="Welcome back. Sign in to pick up your search where you left it."
       eyebrow="Account access"
-      title="Sign in to MyJobAtlas"
+      title="Sign in to Job Atlas"
       footer={
         <div className="flex flex-wrap items-center justify-between gap-3 text-sm text-muted-foreground">
           <Link className="transition-colors hover:text-foreground" href="/forgot-password">
@@ -80,7 +80,7 @@ export default function LoginPage() {
       <div>
         <p className="eyebrow">Account</p>
         <h2 className="mt-3 font-display text-[2rem] font-normal tracking-[-0.02em]">Log in</h2>
-        <p className="mt-2 text-sm leading-6 text-muted-foreground">Continue to your MyJobAtlas account.</p>
+        <p className="mt-2 text-sm leading-6 text-muted-foreground">Continue to your Job Atlas account.</p>
       </div>
       <div className="mt-8 space-y-6">
         <SocialAuthButtons />

@@ -51,12 +51,12 @@ export function Loader() {
               <Asterisk size={84} strokeWidth={1.9} />
             </motion.div>
             <motion.span
-              className="font-mono text-[11px] uppercase tracking-[0.32em] text-muted-foreground"
+              className="brand-wordmark text-[clamp(32px,5vw,56px)] leading-none tracking-[-0.035em] text-ink"
               initial={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 8, filter: "blur(4px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.52, delay: reduceMotion ? 0 : 0.48, ease: "easeOut" }}
             >
-              MyJobAtlas
+              Job Atlas
             </motion.span>
           </div>
         </motion.div>

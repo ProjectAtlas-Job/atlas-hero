@@ -10,7 +10,7 @@ export function FeatureGrid() {
           Scores that explain themselves.
         </h2>
         <p className="mt-5 text-base leading-7 text-muted-foreground">
-          MyJobAtlas separates signal extraction from scoring. Profiles, jobs, companies, applications, and outcomes
+          Job Atlas separates signal extraction from scoring. Profiles, jobs, companies, applications, and outcomes
           become versioned features first; recommendations are built from those features later.
         </p>
       </SectionReveal>

@@ -6,13 +6,13 @@ import { UseCasePanel } from "@/components/marketing/UseCasePanel";
 import { siteUrl } from "@/components/marketing/content";
 
 export const metadata: Metadata = {
-  title: "About MyJobAtlas | India-first job search infrastructure",
-  description: "Learn how MyJobAtlas connects candidate profiles, job discovery, company intelligence, applications, referrals, and outcome learning.",
+  title: "About Job Atlas | India-first job search infrastructure",
+  description: "Learn how Job Atlas connects candidate profiles, job discovery, company intelligence, applications, referrals, and outcome learning.",
   alternates: {
     canonical: `${siteUrl}/about`,
   },
   openGraph: {
-    title: "About MyJobAtlas",
+    title: "About Job Atlas",
     description: "India-first job search infrastructure for profiles, matching, applications, and referrals.",
     url: `${siteUrl}/about`,
   },
@@ -30,12 +30,12 @@ export default function AboutPage() {
     <MarketingShell>
       <section className="page-shell pt-40 pb-20">
         <SectionReveal className="max-w-[760px]">
-          <p className="eyebrow">About MyJobAtlas</p>
+          <p className="eyebrow">About Job Atlas</p>
           <h1 className="mt-5 font-display text-[clamp(40px,6vw,72px)] font-normal leading-[1.0] tracking-[-0.035em]">
             A practical system for the parts of a job search that usually drift apart.
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            MyJobAtlas starts with the Indian job market: roles from major boards, internships, startup listings, company intelligence, resume evidence, contacts, cold outreach, applications, and inbox-detected progress. The product surface is simple because the underlying system is doing the organising.
+            Job Atlas starts with the Indian job market: roles from major boards, internships, startup listings, company intelligence, resume evidence, contacts, cold outreach, applications, and inbox-detected progress. The product surface is simple because the underlying system is doing the organising.
           </p>
         </SectionReveal>
       </section>
@@ -49,7 +49,7 @@ export default function AboutPage() {
                 Turn scattered career signals into decisions.
               </h2>
               <p className="mt-4 text-sm leading-6 text-muted-foreground">
-                A candidate should know which roles fit, which companies are worth attention, what their profile is missing, and what follow-up should happen next. MyJobAtlas is designed around that decision loop.
+                A candidate should know which roles fit, which companies are worth attention, what their profile is missing, and what follow-up should happen next. Job Atlas is designed around that decision loop.
               </p>
             </div>
           </SectionReveal>
@@ -77,7 +77,7 @@ export default function AboutPage() {
             ["Control", "Manual override stays available for applications, outreach, profile edits, and follow-ups. Automation supports the user; it does not hide the process."],
           ].map(([title, text]) => (
             <SectionReveal key={title}>
-              <article className="h-full rounded-[1.5rem] border border-border bg-card p-6 transition duration-200 hover:-translate-y-1 hover:bg-muted">
+              <article className="h-full rounded-[1.5rem] border border-border bg-card p-6 transition duration-200 hover:border-foreground/24 hover:bg-muted">
                 <h2 className="font-display text-xl font-normal tracking-[-0.01em]">{title}</h2>
                 <p className="mt-4 text-sm leading-6 text-muted-foreground">{text}</p>
               </article>

@@ -61,7 +61,7 @@ function ResetPasswordContent() {
 
   return (
     <AuthShell
-      description="Use the reset link from your email to set a new password and return to MyJobAtlas."
+      description="Use the reset link from your email to set a new password and return to Job Atlas."
       eyebrow="Account recovery"
       title="Choose a new password"
       footer={

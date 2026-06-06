@@ -10,7 +10,7 @@ export function WorkflowTimeline({ compact = false }: { compact?: boolean }) {
           Built around the full search loop.
         </h2>
         <p className="mt-5 text-base leading-7 text-muted-foreground">
-          The spec is not a generic tracker. MyJobAtlas collects market data, turns it into explainable scores, improves
+          The spec is not a generic tracker. Job Atlas collects market data, turns it into explainable scores, improves
           the candidate profile, and records outcomes so ranking can improve over time.
         </p>
       </SectionReveal>
